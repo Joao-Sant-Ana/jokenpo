@@ -24,11 +24,9 @@ var figuras = [
     "img/spock.png"
 ]
 
-//this
-
 function clicou() {
     var jogada = 0
-    var n = Math.round(Math.random()*5)
+    var n = Math.ceil(Math.random()*5)
     console.log(n)
     jokenpo.src = figuras[n]
 
@@ -41,12 +39,24 @@ function clicou() {
     //Empatou
     if(jogada == n) {
         alert("Empate")
-    } /*Ganhou*/else if(n == 1 && jogada == 3 || n == 2 && jogada == 1 || n == 3 && jogada == 2){
+    } else if(jogada == 1 && (n == 2 || n == 5)) {
         alert("ganhou")
         ponto.innerHTML = `Jogador - ${++ptplayer}`
-        jogada = 0
-    } /*perdeu*/else {
-        alert("Perdeu")
+    } else if(jogada == 2 && (n == 3 || n == 4)) {
+        alert("ganhou")
+        ponto.innerHTML = `Jogador - ${++ptplayer}`
+    } else if(jogada == 3 && (n == 1 || n == 4)) {
+        alert("ganhou")
+        ponto.innerHTML = `Jogador - ${++ptplayer}`
+    } else if(jogada == 4 && (n == 1 || n == 5)) {
+        alert("ganhou")
+        ponto.innerHTML = `Jogador - ${++ptplayer}`
+    } else if(jogada == 5 && (n == 2 || n == 3)) {
+        alert("ganhou")
+        ponto.innerHTML = `Jogador - ${++ptplayer}`
+    }
+    else {
+        alert("perdeu")
         pontopc.innerHTML = `Computador - ${++ptpc}`
     }
     if(ptplayer == 10){
@@ -54,6 +64,8 @@ function clicou() {
         jokenpo.style.display = "none"
         pedra.style.display = "none"
         tesoura.style.display = "none"
+        lagarto.style.display = "none"
+        spock.style.display = "none"
         res.style.display = "block"
         resp.innerHTML = "Voce ganhou!"
     } else if(ptpc == 10) {
@@ -61,6 +73,8 @@ function clicou() {
         jokenpo.style.display = "none"
         pedra.style.display = "none"
         tesoura.style.display = "none"
+        lagarto.style.display = "none"
+        spock.style.display = "none"
         res.style.display = "block"
         resp.innerHTML = "Voce perdeu!"
     }

@@ -13,7 +13,7 @@ body{
 }
 
 #ponto-jogador{
-    margin-left: 17.5%;
+    margin-left: 17.9%;
     position: fixed;
     font-size: 16pt;
 }
@@ -28,14 +28,14 @@ main{
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     width: 49%;
-    height: 400px;
+    height: 68.4%;
     display: inline-block;
     position: fixed;
 }
 
 #tesoura, #papel, #pedra, #lagarto, #spock{
     width: 10%;
-    margin-left: 35%;
+    margin-left: 39%;
     display: block;
     margin-top: 2%;
     border: solid black 2px;
@@ -47,7 +47,7 @@ main{
 }
 
 #computador{
-    height: 400px;
+    height: 130%;
     width: 49%;
     display: inline-block  ;
     border: 2px solid black;
@@ -63,7 +63,7 @@ main{
 }
 
 #res{
-    background-image: linear-gradient(to right, #1FA2FF, #12D8FA, #A6FFCB);
+    background-image: linear-gradient(to right, #12949b, #75d4e0);
     height: 150px;
     width: 97.1%;
     margin-top: 10%;
@@ -73,11 +73,11 @@ main{
 
 #resp{
     font-size: 25pt;
-    margin-left: 41.5%;
+    margin-left: 43.6%;
 }
 
 p{
-    margin-top: 7%;
+    margin-top: 5%;
     text-align: center;
     font-size: 15pt;
 }
