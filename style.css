@@ -63,7 +63,7 @@ main{
 }
 
 #res{
-    background-image: linear-gradient(to right, #12949b, #75d4e0);
+    background-image: linear-gradient(to right, #48b1bf, #06beb6);
     height: 150px;
     width: 97.1%;
     margin-top: 10%;
@@ -80,4 +80,9 @@ p{
     margin-top: 5%;
     text-align: center;
     font-size: 15pt;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

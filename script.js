@@ -38,25 +38,17 @@ function clicou() {
 
     //Empatou
     if(jogada == n) {
-        alert("Empate")
     } else if(jogada == 1 && (n == 2 || n == 5)) {
-        alert("ganhou")
         ponto.innerHTML = `Jogador - ${++ptplayer}`
     } else if(jogada == 2 && (n == 3 || n == 4)) {
-        alert("ganhou")
         ponto.innerHTML = `Jogador - ${++ptplayer}`
     } else if(jogada == 3 && (n == 1 || n == 4)) {
-        alert("ganhou")
         ponto.innerHTML = `Jogador - ${++ptplayer}`
     } else if(jogada == 4 && (n == 1 || n == 5)) {
-        alert("ganhou")
         ponto.innerHTML = `Jogador - ${++ptplayer}`
     } else if(jogada == 5 && (n == 2 || n == 3)) {
-        alert("ganhou")
         ponto.innerHTML = `Jogador - ${++ptplayer}`
-    }
-    else {
-        alert("perdeu")
+    } else {
         pontopc.innerHTML = `Computador - ${++ptpc}`
     }
     if(ptplayer == 10){
@@ -68,6 +60,23 @@ function clicou() {
         spock.style.display = "none"
         res.style.display = "block"
         resp.innerHTML = "Voce ganhou!"
+        document.addEventListener("keydown",function(event){
+            var tecla = event.keyCode
+            if(tecla == 13){
+                jokenpo.src = figuras[0]
+                ptplayer = 0
+                ptpc = 0
+                papel.style.display = "block"
+                jokenpo.style.display = "block"
+                pedra.style.display = "block"
+                tesoura.style.display = "block"
+                lagarto.style.display = "block"
+                spock.style.display = "block"
+                res.style.display = "none"
+                ponto.innerHTML = `Jogador - ${ptplayer}`
+                pontopc.innerHTML = `Computador - ${ptpc}`
+            }
+        })
     } else if(ptpc == 10) {
         papel.style.display = "none"
         jokenpo.style.display = "none"
@@ -77,5 +86,22 @@ function clicou() {
         spock.style.display = "none"
         res.style.display = "block"
         resp.innerHTML = "Voce perdeu!"
+        document.addEventListener("keydown",function(event){
+            var tecla = event.keyCode
+            if(tecla == 13){
+                jokenpo.src = figuras[0]
+                ptplayer = 0
+                ptpc = 0
+                papel.style.display = "block"
+                jokenpo.style.display = "block"
+                pedra.style.display = "block"
+                tesoura.style.display = "block"
+                lagarto.style.display = "block"
+                spock.style.display = "block"
+                res.style.display = "none"
+                ponto.innerHTML = `Jogador - ${ptplayer}`
+                pontopc.innerHTML = `Computador - ${ptpc}`
+            }
+        })
     }
 }
