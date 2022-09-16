@@ -33,7 +33,7 @@ main{
     position: fixed;
 }
 
-#tesoura, #papel, #pedra, #tesoura2, #papel2, #pedra2{
+#tesoura1, #papel1, #pedra1, #tesoura2, #papel2, #pedra2{
     width: 15%;
     margin-left: 50%;
     display: block;
@@ -43,7 +43,7 @@ main{
     border-radius: 110%;
 }
 
-#lagarto, #lagarto2{
+#lagarto1, #lagarto2{
     position: absolute;
     bottom: 53%;
     margin-left: 29%;
@@ -55,7 +55,7 @@ main{
     border-radius: 110%;
 }
 
-#spock, #spock2{
+#spock1, #spock2{
     position: absolute;
     bottom: 18.5%;
     margin-left: 29%;
@@ -67,7 +67,7 @@ main{
     border-radius: 110%;
 }
 
-#tesoura:hover, #papel:hover, #pedra:hover, #lagarto:hover, #spock:hover, #tesoura2:hover, #papel2:hover, #pedra2:hover, #lagarto2:hover, #spock2:hover{
+#tesoura1:hover, #papel1:hover, #pedra1:hover, #lagarto1:hover, #spock1:hover, #tesoura2:hover, #papel2:hover, #pedra2:hover, #lagarto2:hover, #spock2:hover{
     border:solid red 3px; 
 }
 
@@ -83,9 +83,9 @@ main{
 
 #jokenpo1, #jokenpo2{
     width: 25%;
-    margin-left: 15%;
+    margin-left: 10%;
     display: block;
-    margin-top: 5%;
+    margin-top: 3%;
     position: fixed;
     display: none;
 }
@@ -104,7 +104,7 @@ main{
 
 #resp{
     font-size: 25pt;
-    margin-left: 42.2%;
+    margin-left: 41.6%;
 }
 
 p{
@@ -116,4 +116,12 @@ p{
 a{
     text-decoration: none;
     color: black;
+}
+
+#btn{
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    left: 47.3%;
+    bottom: 10%;
 }
