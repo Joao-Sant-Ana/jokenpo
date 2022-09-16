@@ -3,7 +3,10 @@ body{
     font-family: Optima, sans-serif;
 }
 
-.title{text-align: center;}
+#title{
+    text-align: center;
+    opacity: 0%;
+}
 #menu{
     margin-top: 5%;
     font-size: 15pt;
@@ -11,10 +14,14 @@ body{
 #game{
     text-align: center;
     position: relative;
+    opacity: 0%;
+    cursor: default;
 }
 #rules{
     text-align: center;
     position: relative;
+    opacity: 0%;
+    cursor: default;
 }
 
 a{
@@ -23,53 +30,27 @@ a{
     position: fixed;
 }
 
-.rules{
-    margin-top: 3%;
-    text-align: center;
-    font-size: 15pt;
+#carregando{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    border-radius: 100%;
+    border-top: 12px solid transparent;
+    border-left: 12px solid black;
+    border-right: 12px solid black;
+    border-bottom: 12px solid black;
+    animation: loading 1s linear infinite;
 }
 
-.rulesbox{
-    width: 53%;
-    position: fixed;
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
-
-.rulesimg{
-    margin-left: 54%;
-}
-
-#img1{
-    width: 10%;
-    margin-left: 5%;
-    margin-top: 2%;
-    border: solid black 2px;
-    border-radius: 110%;
-}
-
-#img2{
-    width: 10%;
-    margin-left: 5%;
-    margin-top: 2%;
-
-}
-
-#img3{
-    width: 10%;
-    margin-left: 5%;
-    margin-top: 2%;
-    border: solid black 2px;
-    border-radius: 110%;
-}
-
-#img4{
-    width: 10%;
-    margin-left: 5%;
-    margin-top: 2%;
-    border: solid black 2px;
-    border-radius: 110%;
-}
-
-#voltar{
-    width: 20%;
-}
-
