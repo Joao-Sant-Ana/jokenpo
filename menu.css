@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right, #06beb6, #48b1bf);
+    background-image: linear-gradient(to right, #9796f0, #48b1bf);
     font-family: Optima, sans-serif;
 }
 
@@ -11,12 +11,22 @@ body{
     margin-top: 5%;
     font-size: 15pt;
 }
-#game{
+#game-1{
+    margin: auto;
     text-align: center;
     position: relative;
     opacity: 0%;
     cursor: default;
 }
+
+#game-2{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    opacity: 0%;
+    cursor: default;
+}
+
 #rules{
     text-align: center;
     position: relative;

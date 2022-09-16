@@ -33,38 +33,41 @@ main{
     position: fixed;
 }
 
-#tesoura, #papel, #pedra{
+#tesoura, #papel, #pedra, #tesoura2, #papel2, #pedra2{
     width: 15%;
     margin-left: 50%;
     display: block;
+    z-index: 100;
     margin-top: 5%;
     border: solid black 2px;
     border-radius: 110%;
 }
 
-#lagarto{
+#lagarto, #lagarto2{
     position: absolute;
     bottom: 53%;
     margin-left: 29%;
     width: 15%;
     display: block;
+    z-index: 100;
     margin-top: 5%;
     border: solid black 2px;
     border-radius: 110%;
 }
 
-#spock{
+#spock, #spock2{
     position: absolute;
     bottom: 18.5%;
     margin-left: 29%;
     width: 15%;
+    z-index: 100;
     display: block;
     margin-top: 2%;
     border: solid black 2px;
     border-radius: 110%;
 }
 
-#tesoura:hover, #papel:hover, #pedra:hover, #lagarto:hover, #spock:hover{
+#tesoura:hover, #papel:hover, #pedra:hover, #lagarto:hover, #spock:hover, #tesoura2:hover, #papel2:hover, #pedra2:hover, #lagarto2:hover, #spock2:hover{
     border:solid red 3px; 
 }
 
@@ -78,11 +81,13 @@ main{
     margin-left: 49.2%;
 }
 
-#jokenpo{
-    width: 35%;
-    margin-left: 35%;
+#jokenpo1, #jokenpo2{
+    width: 25%;
+    margin-left: 15%;
     display: block;
-    margin-top: 15%;
+    margin-top: 5%;
+    position: fixed;
+    display: none;
 }
 
 #res{
@@ -112,4 +117,3 @@ a{
     text-decoration: none;
     color: black;
 }
-

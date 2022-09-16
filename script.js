@@ -36,9 +36,8 @@ function clicou() {
     if(this.id == "lagarto"){jogada = 4}
     if(this.id == "spock"){jogada = 5}
 
-    //Empatou
-    if(jogada == n) {
-    } else if(jogada == 1 && (n == 2 || n == 5)) {
+    //Ganhou
+    if(jogada == 1 && (n == 2 || n == 5)) {
         ponto.innerHTML = `Jogador - ${++ptplayer}`
     } else if(jogada == 2 && (n == 3 || n == 4)) {
         ponto.innerHTML = `Jogador - ${++ptplayer}`
@@ -48,7 +47,9 @@ function clicou() {
         ponto.innerHTML = `Jogador - ${++ptplayer}`
     } else if(jogada == 5 && (n == 2 || n == 3)) {
         ponto.innerHTML = `Jogador - ${++ptplayer}`
-    } else {
+    } else if(jogada == n) {}
+    //Perdeu
+    else {
         pontopc.innerHTML = `Computador - ${++ptpc}`
     }
     if(ptplayer == 10){
@@ -58,7 +59,9 @@ function clicou() {
         tesoura.style.display = "none"
         lagarto.style.display = "none"
         spock.style.display = "none"
-        res.style.display = "block"
+        res.style.zIndex = "100"
+        res.style.transition = "1s"
+        res.style.opacity = "100%"
         resp.innerHTML = "Voce ganhou!"
         document.addEventListener("keydown",function(event){
             var tecla = event.keyCode
@@ -72,7 +75,8 @@ function clicou() {
                 tesoura.style.display = "block"
                 lagarto.style.display = "block"
                 spock.style.display = "block"
-                res.style.display = "none"
+                res.style.zIndex = "0"
+                res.style.opacity = "0%"
                 ponto.innerHTML = `Jogador - ${ptplayer}`
                 pontopc.innerHTML = `Computador - ${ptpc}`
             }
@@ -84,7 +88,9 @@ function clicou() {
         tesoura.style.display = "none"
         lagarto.style.display = "none"
         spock.style.display = "none"
-        res.style.display = "block"
+        res.style.zIndex = "100"
+        res.style.transition = "1s"
+        res.style.opacity = "100%"
         resp.innerHTML = "Voce perdeu!"
         document.addEventListener("keydown",function(event){
             var tecla = event.keyCode
@@ -98,7 +104,8 @@ function clicou() {
                 tesoura.style.display = "block"
                 lagarto.style.display = "block"
                 spock.style.display = "block"
-                res.style.display = "none"
+                res.style.zIndex = "0"
+                res.style.opacity = "0%"
                 ponto.innerHTML = `Jogador - ${ptplayer}`
                 pontopc.innerHTML = `Computador - ${ptpc}`
             }
