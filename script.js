@@ -2,8 +2,6 @@ var pontopc = document.getElementById('ponto-computador')
 var ponto = document.getElementById('ponto-jogador')
 var res = document.getElementById('res')
 var resp = document.getElementById('resp')
-ptpc = 0
-ptplayer = 0
 var lagarto = document.getElementById('lagarto')
 lagarto.addEventListener("click", clicou)
 var spock = document.getElementById('spock')
@@ -16,7 +14,7 @@ var papel = document.getElementById('papel')
 papel.addEventListener("click", clicou)
 var jokenpo = document.getElementById('jokenpo')
 var figuras = [
-    "img/jokenpo.webp",
+    "img/jokenpo.png",
     "img/papel.png",
     "img/pedra.png",
     "img/tesoura.png",
@@ -24,10 +22,12 @@ var figuras = [
     "img/spock.png"
 ]
 
+ptpc = 0
+ptplayer = 0
+
 function clicou() {
     var jogada = 0
     var n = Math.ceil(Math.random()*5)
-    console.log(n)
     jokenpo.src = figuras[n]
 
     if(this.id == "papel"){jogada = 1}

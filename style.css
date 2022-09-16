@@ -19,7 +19,7 @@ body{
 }
 
 main{
-    height: 400px;
+    height: 500%;
     display: block;
 }
 
@@ -47,12 +47,13 @@ main{
 }
 
 #computador{
-    height: 130%;
+    height: 51.3%;
+    padding-bottom: 8.01%;
     width: 49%;
-    display: inline-block  ;
+    display: block;
+    position: fixed;
     border: 2px solid black;
     margin-left: 49.2%;
-
 }
 
 #jokenpo{
@@ -64,11 +65,12 @@ main{
 
 #res{
     background-image: linear-gradient(to right, #48b1bf, #06beb6);
-    height: 150px;
-    width: 97.1%;
+    height: 25%;
+    width: 98.5%;
     margin-top: 10%;
-    position:absolute;
+    position: absolute;
     display: none;
+    z-index: 100;
 }
 
 #resp{
